@@ -1,0 +1,878 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		638FEAAFC575BB76BC6AC055CDDA3506 /* LookinServer */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 74EE83670ABC31CDD77B49DA732104E8 /* Build configuration list for PBXAggregateTarget "LookinServer" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = LookinServer;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0772F3B626381D637B630676635573A4 /* Pods-ChartView-ChartViewUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B9A34217D511933CDD9A0930DF8C581E /* Pods-ChartView-ChartViewUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2755EF0D80F13176EF672AC1EFD1AF15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		45EB924B61CF0310487FDC5DFBC395AE /* Pods-ChartViewTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FF7F5EA1FAEA1E6B59E46041C0586471 /* Pods-ChartViewTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A2E44658FFE0D09E63155555C281534 /* Pods-ChartViewTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D7590DF3F1D92961AAD228F8E5EEFF7 /* Pods-ChartViewTests-dummy.m */; };
+		6B9A72B0BF56FAF462856BA2FB917AB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		70166D175CDABB52C207D6888E8C0C55 /* Pods-ChartView-ChartViewUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0368C1933321BC69834843473D65823E /* Pods-ChartView-ChartViewUITests-dummy.m */; };
+		994E87406E07BD281F46FB0E80622FDF /* Pods-ChartView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A657F98DC3DABBB1BC868411AC99B47 /* Pods-ChartView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CECD4D3D021EE0937B96B142D565552D /* Pods-ChartView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 723CEF72450D96A8B14D01AF119928B6 /* Pods-ChartView-dummy.m */; };
+		EF825EC0CA1312D7E185313336E3BD0F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		065CDA4E5E23A2F15B4C6F891EDB3B07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 638FEAAFC575BB76BC6AC055CDDA3506;
+			remoteInfo = LookinServer;
+		};
+		5A380CB59FDA461F6D3229FDC04FDE5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D99D969CAC03F9E082ED7F69C4C92F14;
+			remoteInfo = "Pods-ChartView";
+		};
+		AE6D2419C9B9E2EBDF204639FCA9354E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 638FEAAFC575BB76BC6AC055CDDA3506;
+			remoteInfo = LookinServer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0368C1933321BC69834843473D65823E /* Pods-ChartView-ChartViewUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ChartView-ChartViewUITests-dummy.m"; sourceTree = "<group>"; };
+		06FBF2516331D20B805D92A42788C906 /* Pods-ChartView-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ChartView-acknowledgements.plist"; sourceTree = "<group>"; };
+		101064DB205797869E5AF52462F01C71 /* Pods-ChartView-ChartViewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChartView-ChartViewUITests.release.xcconfig"; sourceTree = "<group>"; };
+		148266C0E1462E46E044682524B34084 /* Pods-ChartView-ChartViewUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ChartView-ChartViewUITests.modulemap"; sourceTree = "<group>"; };
+		28529B28CF30B07E89105AFA368930E5 /* LookinServer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LookinServer.release.xcconfig; sourceTree = "<group>"; };
+		2B1C6783BE7FC44871EAC4C7492C50AD /* Pods-ChartView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChartView.release.xcconfig"; sourceTree = "<group>"; };
+		309D89C7CA3E697F4D5BB1BFE0088E24 /* Pods-ChartView-ChartViewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChartView-ChartViewUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		31EF5E1F0B2AE2A372BA02D00677E44B /* Pods-ChartView-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ChartView-frameworks.sh"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		39ED7ADE462A6959D1E9B46E6939E691 /* Pods_ChartView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ChartView.framework; path = "Pods-ChartView.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DA7F838039FC6F3E46C793725E0A2CC /* Pods-ChartView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChartView.debug.xcconfig"; sourceTree = "<group>"; };
+		590B0F349C5EF7C006107F5F65CCE2BA /* Pods_ChartViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ChartViewTests.framework; path = "Pods-ChartViewTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FAA77BFCC12CF80C1A0446B9B7BC3AF /* Pods-ChartView-ChartViewUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ChartView-ChartViewUITests-Info.plist"; sourceTree = "<group>"; };
+		60F58044DDACA820BA756EFDDCF3ACB3 /* Pods-ChartViewTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ChartViewTests-Info.plist"; sourceTree = "<group>"; };
+		6651E68372B345EDBEBABF7C5F42C8B8 /* Pods-ChartViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChartViewTests.release.xcconfig"; sourceTree = "<group>"; };
+		685C3DC82C8BC27CF39A574136A4B516 /* Pods-ChartView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ChartView-Info.plist"; sourceTree = "<group>"; };
+		723CEF72450D96A8B14D01AF119928B6 /* Pods-ChartView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ChartView-dummy.m"; sourceTree = "<group>"; };
+		7D4F1180F9AF71E6884C8BFF556A7D6B /* Pods-ChartView-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ChartView-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7D7590DF3F1D92961AAD228F8E5EEFF7 /* Pods-ChartViewTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ChartViewTests-dummy.m"; sourceTree = "<group>"; };
+		82A8925117D84D8764D4F954FE69356F /* Pods-ChartViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ChartViewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8A657F98DC3DABBB1BC868411AC99B47 /* Pods-ChartView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ChartView-umbrella.h"; sourceTree = "<group>"; };
+		93ECCA68F45D20432FDCF4A12FDB206E /* LookinServer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LookinServer.framework; sourceTree = "<group>"; };
+		98C40F5568098757F86C2EFA98FA5912 /* Pods-ChartView-ChartViewUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ChartView-ChartViewUITests-frameworks.sh"; sourceTree = "<group>"; };
+		996FFCC442BAB75BC28414E76AE45618 /* Pods-ChartViewTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ChartViewTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A9AA4E84E3A26E6707594129B4768D24 /* LookinServer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LookinServer.debug.xcconfig; sourceTree = "<group>"; };
+		B9A34217D511933CDD9A0930DF8C581E /* Pods-ChartView-ChartViewUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ChartView-ChartViewUITests-umbrella.h"; sourceTree = "<group>"; };
+		D81281D9CEEA5C7B6CAFD8FF43EB75B4 /* Pods-ChartView-ChartViewUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ChartView-ChartViewUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E89FE30885A50A90CBB91931F7CCD7F4 /* Pods_ChartView_ChartViewUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ChartView_ChartViewUITests.framework; path = "Pods-ChartView-ChartViewUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3923AD5571F85CC35911CC0F1EA3EB6 /* Pods-ChartView-ChartViewUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ChartView-ChartViewUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F45441F1722CE1A0507D00D1FF025CCF /* Pods-ChartView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ChartView.modulemap"; sourceTree = "<group>"; };
+		F5C80A0F427700B5BA25CEC5C5B6C5FF /* Pods-ChartViewTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ChartViewTests.modulemap"; sourceTree = "<group>"; };
+		FB3EE801AD9CEECE0409486B7BAE5263 /* Pods-ChartViewTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ChartViewTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FF7F5EA1FAEA1E6B59E46041C0586471 /* Pods-ChartViewTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ChartViewTests-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A25E380DB864035E670DF8BB745DCDFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B9A72B0BF56FAF462856BA2FB917AB3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5A1732FA7E8D84CC354E4B6EB5D87FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2755EF0D80F13176EF672AC1EFD1AF15 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C73731861C4BA0D514F29F4BD32A638B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF825EC0CA1312D7E185313336E3BD0F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A7FC8FF878FA76247A9D171396D22FD /* Pods-ChartViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				F5C80A0F427700B5BA25CEC5C5B6C5FF /* Pods-ChartViewTests.modulemap */,
+				FB3EE801AD9CEECE0409486B7BAE5263 /* Pods-ChartViewTests-acknowledgements.markdown */,
+				996FFCC442BAB75BC28414E76AE45618 /* Pods-ChartViewTests-acknowledgements.plist */,
+				7D7590DF3F1D92961AAD228F8E5EEFF7 /* Pods-ChartViewTests-dummy.m */,
+				60F58044DDACA820BA756EFDDCF3ACB3 /* Pods-ChartViewTests-Info.plist */,
+				FF7F5EA1FAEA1E6B59E46041C0586471 /* Pods-ChartViewTests-umbrella.h */,
+				82A8925117D84D8764D4F954FE69356F /* Pods-ChartViewTests.debug.xcconfig */,
+				6651E68372B345EDBEBABF7C5F42C8B8 /* Pods-ChartViewTests.release.xcconfig */,
+			);
+			name = "Pods-ChartViewTests";
+			path = "Target Support Files/Pods-ChartViewTests";
+			sourceTree = "<group>";
+		};
+		2AB58C7D1BF01380B631C53DC7FA528F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D5982A85A59A9FB9D5DAFADBB906E2BF /* LookinServer */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2C07352F72EC7433A430E96413060A40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93ECCA68F45D20432FDCF4A12FDB206E /* LookinServer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		463911A867E997426DF8B9ED607A3F98 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9AA4E84E3A26E6707594129B4768D24 /* LookinServer.debug.xcconfig */,
+				28529B28CF30B07E89105AFA368930E5 /* LookinServer.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LookinServer";
+			sourceTree = "<group>";
+		};
+		4B3088162484945D6772FDE6311ED013 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39ED7ADE462A6959D1E9B46E6939E691 /* Pods_ChartView.framework */,
+				E89FE30885A50A90CBB91931F7CCD7F4 /* Pods_ChartView_ChartViewUITests.framework */,
+				590B0F349C5EF7C006107F5F65CCE2BA /* Pods_ChartViewTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		840723DACC52F1929157240AF3382DB4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F1A7AC8801E140D8802CA8F3F3092F39 /* Pods-ChartView */,
+				A35E04DEBE15FC31F47EB9198C05E5FF /* Pods-ChartView-ChartViewUITests */,
+				1A7FC8FF878FA76247A9D171396D22FD /* Pods-ChartViewTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A35E04DEBE15FC31F47EB9198C05E5FF /* Pods-ChartView-ChartViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				148266C0E1462E46E044682524B34084 /* Pods-ChartView-ChartViewUITests.modulemap */,
+				D81281D9CEEA5C7B6CAFD8FF43EB75B4 /* Pods-ChartView-ChartViewUITests-acknowledgements.markdown */,
+				F3923AD5571F85CC35911CC0F1EA3EB6 /* Pods-ChartView-ChartViewUITests-acknowledgements.plist */,
+				0368C1933321BC69834843473D65823E /* Pods-ChartView-ChartViewUITests-dummy.m */,
+				98C40F5568098757F86C2EFA98FA5912 /* Pods-ChartView-ChartViewUITests-frameworks.sh */,
+				5FAA77BFCC12CF80C1A0446B9B7BC3AF /* Pods-ChartView-ChartViewUITests-Info.plist */,
+				B9A34217D511933CDD9A0930DF8C581E /* Pods-ChartView-ChartViewUITests-umbrella.h */,
+				309D89C7CA3E697F4D5BB1BFE0088E24 /* Pods-ChartView-ChartViewUITests.debug.xcconfig */,
+				101064DB205797869E5AF52462F01C71 /* Pods-ChartView-ChartViewUITests.release.xcconfig */,
+			);
+			name = "Pods-ChartView-ChartViewUITests";
+			path = "Target Support Files/Pods-ChartView-ChartViewUITests";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				2AB58C7D1BF01380B631C53DC7FA528F /* Pods */,
+				4B3088162484945D6772FDE6311ED013 /* Products */,
+				840723DACC52F1929157240AF3382DB4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5982A85A59A9FB9D5DAFADBB906E2BF /* LookinServer */ = {
+			isa = PBXGroup;
+			children = (
+				2C07352F72EC7433A430E96413060A40 /* Frameworks */,
+				463911A867E997426DF8B9ED607A3F98 /* Support Files */,
+			);
+			name = LookinServer;
+			path = LookinServer;
+			sourceTree = "<group>";
+		};
+		F1A7AC8801E140D8802CA8F3F3092F39 /* Pods-ChartView */ = {
+			isa = PBXGroup;
+			children = (
+				F45441F1722CE1A0507D00D1FF025CCF /* Pods-ChartView.modulemap */,
+				7D4F1180F9AF71E6884C8BFF556A7D6B /* Pods-ChartView-acknowledgements.markdown */,
+				06FBF2516331D20B805D92A42788C906 /* Pods-ChartView-acknowledgements.plist */,
+				723CEF72450D96A8B14D01AF119928B6 /* Pods-ChartView-dummy.m */,
+				31EF5E1F0B2AE2A372BA02D00677E44B /* Pods-ChartView-frameworks.sh */,
+				685C3DC82C8BC27CF39A574136A4B516 /* Pods-ChartView-Info.plist */,
+				8A657F98DC3DABBB1BC868411AC99B47 /* Pods-ChartView-umbrella.h */,
+				3DA7F838039FC6F3E46C793725E0A2CC /* Pods-ChartView.debug.xcconfig */,
+				2B1C6783BE7FC44871EAC4C7492C50AD /* Pods-ChartView.release.xcconfig */,
+			);
+			name = "Pods-ChartView";
+			path = "Target Support Files/Pods-ChartView";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1CB8FCF97B12B1715C227B747AC70448 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				994E87406E07BD281F46FB0E80622FDF /* Pods-ChartView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5182D0BB0204DFFB9384990236C4DFE1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0772F3B626381D637B630676635573A4 /* Pods-ChartView-ChartViewUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BADBB7B82D7D6E0B28B1D360D05F7A4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45EB924B61CF0310487FDC5DFBC395AE /* Pods-ChartViewTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		79CC6C9C18D955E07DF9F761CBA7730B /* Pods-ChartViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9C9A22B9C3B91C4B310FB1D7A1E0C34 /* Build configuration list for PBXNativeTarget "Pods-ChartViewTests" */;
+			buildPhases = (
+				6BADBB7B82D7D6E0B28B1D360D05F7A4 /* Headers */,
+				1ACA9378B775B5DDF7FA875122DEC2DE /* Sources */,
+				C73731861C4BA0D514F29F4BD32A638B /* Frameworks */,
+				C2840B45045B1876F8479CE471164611 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B391707CDFDF90B0D5344868E597C3CD /* PBXTargetDependency */,
+			);
+			name = "Pods-ChartViewTests";
+			productName = "Pods-ChartViewTests";
+			productReference = 590B0F349C5EF7C006107F5F65CCE2BA /* Pods_ChartViewTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D99D969CAC03F9E082ED7F69C4C92F14 /* Pods-ChartView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BBF794337483B8AB2D80C7F594B9D93 /* Build configuration list for PBXNativeTarget "Pods-ChartView" */;
+			buildPhases = (
+				1CB8FCF97B12B1715C227B747AC70448 /* Headers */,
+				F2B55207BFDBC13A50CCBC2A5964D4E7 /* Sources */,
+				A25E380DB864035E670DF8BB745DCDFD /* Frameworks */,
+				03D986A0E5AFDC9FF3831EDF143466B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B2F92CCC58A3146F74CE7BA1D8B9C96 /* PBXTargetDependency */,
+			);
+			name = "Pods-ChartView";
+			productName = "Pods-ChartView";
+			productReference = 39ED7ADE462A6959D1E9B46E6939E691 /* Pods_ChartView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E5CBB481E1D39DF61FFEFF953A13E560 /* Pods-ChartView-ChartViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED77820CA2135380887137BCBB521AE7 /* Build configuration list for PBXNativeTarget "Pods-ChartView-ChartViewUITests" */;
+			buildPhases = (
+				5182D0BB0204DFFB9384990236C4DFE1 /* Headers */,
+				8D9290FAA731E3E1E2BFAD91BB1CEBBE /* Sources */,
+				C5A1732FA7E8D84CC354E4B6EB5D87FA /* Frameworks */,
+				0515DD8A641049D11DCE80F1AF3AF266 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85732C462BED8E627FD41191AFC69C8A /* PBXTargetDependency */,
+			);
+			name = "Pods-ChartView-ChartViewUITests";
+			productName = "Pods-ChartView-ChartViewUITests";
+			productReference = E89FE30885A50A90CBB91931F7CCD7F4 /* Pods_ChartView_ChartViewUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 4B3088162484945D6772FDE6311ED013 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				638FEAAFC575BB76BC6AC055CDDA3506 /* LookinServer */,
+				D99D969CAC03F9E082ED7F69C4C92F14 /* Pods-ChartView */,
+				E5CBB481E1D39DF61FFEFF953A13E560 /* Pods-ChartView-ChartViewUITests */,
+				79CC6C9C18D955E07DF9F761CBA7730B /* Pods-ChartViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03D986A0E5AFDC9FF3831EDF143466B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0515DD8A641049D11DCE80F1AF3AF266 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2840B45045B1876F8479CE471164611 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1ACA9378B775B5DDF7FA875122DEC2DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A2E44658FFE0D09E63155555C281534 /* Pods-ChartViewTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D9290FAA731E3E1E2BFAD91BB1CEBBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70166D175CDABB52C207D6888E8C0C55 /* Pods-ChartView-ChartViewUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2B55207BFDBC13A50CCBC2A5964D4E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CECD4D3D021EE0937B96B142D565552D /* Pods-ChartView-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		85732C462BED8E627FD41191AFC69C8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LookinServer;
+			target = 638FEAAFC575BB76BC6AC055CDDA3506 /* LookinServer */;
+			targetProxy = 065CDA4E5E23A2F15B4C6F891EDB3B07 /* PBXContainerItemProxy */;
+		};
+		8B2F92CCC58A3146F74CE7BA1D8B9C96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LookinServer;
+			target = 638FEAAFC575BB76BC6AC055CDDA3506 /* LookinServer */;
+			targetProxy = AE6D2419C9B9E2EBDF204639FCA9354E /* PBXContainerItemProxy */;
+		};
+		B391707CDFDF90B0D5344868E597C3CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-ChartView";
+			target = D99D969CAC03F9E082ED7F69C4C92F14 /* Pods-ChartView */;
+			targetProxy = 5A380CB59FDA461F6D3229FDC04FDE5C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0EFF7AD2368828BDF8C89EDF58FB15F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 309D89C7CA3E697F4D5BB1BFE0088E24 /* Pods-ChartView-ChartViewUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ChartView-ChartViewUITests/Pods-ChartView-ChartViewUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ChartView-ChartViewUITests/Pods-ChartView-ChartViewUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5DF3CB089FE09F35A744C4C46AA32653 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6651E68372B345EDBEBABF7C5F42C8B8 /* Pods-ChartViewTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ChartViewTests/Pods-ChartViewTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ChartViewTests/Pods-ChartViewTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6730493796C72F035E1A2AFCE52BB49C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9AA4E84E3A26E6707594129B4768D24 /* LookinServer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		70546B2EF0DA86FD64A9BF5A98F8B141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B1C6783BE7FC44871EAC4C7492C50AD /* Pods-ChartView.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ChartView/Pods-ChartView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ChartView/Pods-ChartView.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		79845C07285B612DC58031A567382346 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 101064DB205797869E5AF52462F01C71 /* Pods-ChartView-ChartViewUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ChartView-ChartViewUITests/Pods-ChartView-ChartViewUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ChartView-ChartViewUITests/Pods-ChartView-ChartViewUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7F885F052E906E876DDD06206091F29D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28529B28CF30B07E89105AFA368930E5 /* LookinServer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		916E0404255105F480DC4950B7625F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		BE51507DDC0BCC7B7C8B3309A0BEE6CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DA7F838039FC6F3E46C793725E0A2CC /* Pods-ChartView.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ChartView/Pods-ChartView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ChartView/Pods-ChartView.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D041B1172547C2FD73CE4F020DC2F431 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82A8925117D84D8764D4F954FE69356F /* Pods-ChartViewTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ChartViewTests/Pods-ChartViewTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ChartViewTests/Pods-ChartViewTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				916E0404255105F480DC4950B7625F7A /* Debug */,
+				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BBF794337483B8AB2D80C7F594B9D93 /* Build configuration list for PBXNativeTarget "Pods-ChartView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE51507DDC0BCC7B7C8B3309A0BEE6CD /* Debug */,
+				70546B2EF0DA86FD64A9BF5A98F8B141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74EE83670ABC31CDD77B49DA732104E8 /* Build configuration list for PBXAggregateTarget "LookinServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6730493796C72F035E1A2AFCE52BB49C /* Debug */,
+				7F885F052E906E876DDD06206091F29D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9C9A22B9C3B91C4B310FB1D7A1E0C34 /* Build configuration list for PBXNativeTarget "Pods-ChartViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D041B1172547C2FD73CE4F020DC2F431 /* Debug */,
+				5DF3CB089FE09F35A744C4C46AA32653 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED77820CA2135380887137BCBB521AE7 /* Build configuration list for PBXNativeTarget "Pods-ChartView-ChartViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EFF7AD2368828BDF8C89EDF58FB15F4 /* Debug */,
+				79845C07285B612DC58031A567382346 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

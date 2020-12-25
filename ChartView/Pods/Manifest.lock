@@ -1,0 +1,16 @@
+PODS:
+  - LookinServer (1.0.0)
+
+DEPENDENCIES:
+  - LookinServer
+
+SPEC REPOS:
+  trunk:
+    - LookinServer
+
+SPEC CHECKSUMS:
+  LookinServer: 0002891cd3cec5e082a910e897dfe71b4f06b89e
+
+PODFILE CHECKSUM: 2f0d87f1be6cf3159fe596d2c9298356621de673
+
+COCOAPODS: 1.9.1
