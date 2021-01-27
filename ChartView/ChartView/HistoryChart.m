@@ -144,24 +144,21 @@
 #pragma mark - 开始绘制 -
 - (void)reloadData{
     // 绘制前清空画布
-//    for (CALayer *layer in self.layer.sublayers) {[layer removeFromSuperlayer];}
-    for (NSInteger i=0; i<self.layer.sublayers.count; i++) {
-        CALayer *layer = self.layer.sublayers[i];
-        [layer removeFromSuperlayer];
-    }
+
+    [self.layer.sublayers makeObjectsPerformSelector:@selector(removeFromSuperlayer)];
     
     // 绘制XY轴
     [self drawXYAxis];
     // 绘制辅助线
     [self drawGuide];
-    // 计算数据
+//    // 计算数据
     [self calculateValue];
-    // 绘制坐标轴数据
+//    // 绘制坐标轴数据
     [self drawAxisData];
-    // 画图
+//    // 画图
     [self drawHistogram];
     [self drawLineChart];
-//    [self drawInitView];
+    [self drawInitView];
 }
 - (void)drawInitView
 {
@@ -243,7 +240,7 @@
 {
     CGFloat scale = self.rowSpace / space_value;
     NSLog(@"左边距 = CanvasLeftBottomPoint.x = %f %f",CanvasLeftBottomPoint.x,CanvasLeftBottomPoint.y);
-    for (int i = 0; i < [_valueDataAry1 count]; i++) {
+    for (int i = 0; i < _valueDataAry1.count; i++) {
         NSString *curValue = _valueDataAry1[i];
         CGPoint point = POINT(CanvasLeftBottomPoint.x + (padding+i  * self.columnSpace), CanvasLeftBottomPoint.y + 0.5);
         ECAnimationLayer *histogramLayer = [self histogramWith:point width:_histogramWidth height:TwoPointSpacing(CanvasLeftTopPoint, CanvasLeftBottomPoint)];
@@ -252,17 +249,21 @@
         histogramLayer.fillColor = _histogramFillColor1.CGColor;
         [self.layer addSublayer:histogramLayer];
         [chartLayerAry addObject:histogramLayer];
-        histogramLayer.selfRect = CGRectMake(point.x, point.y, _histogramWidth, [curValue floatValue] * scale);
+        CGFloat curheight = [curValue floatValue] * scale;
+        histogramLayer.selfRect = CGRectMake(point.x, point.y, _histogramWidth, curheight);
         histogramLayer.obj = @0;
         
+        
         [histogramLayer animationSetPath:^CGPathRef (CADisplayLink *displayLink) {
-            CGFloat targetValue = [curValue floatValue] * scale;
+            CGFloat targetValue = curheight;
             CGFloat currentValue = [histogramLayer.obj floatValue];
             CGFloat speed = (targetValue - currentValue) / 10;
+            
+ 
             if (speed <= 1.0 / _precisionScale) {
                 [displayLink invalidate];
                 CGRect rect = [self rectWithSize:CGSizeMake(_edgeInsets.left, self.rowSpace) attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:_yValueDataStyle.fontSize]} forStr:curValue];
-                
+
                 CATextLayer *ytext = [self textLayer:POINT(_histogramWidth / 2.0, [histogramLayer.obj floatValue]) text:curValue fontColor:_yValueDataStyle.fontColor fontSize:_yValueDataStyle.fontSize boxSize:CGSizeMake(_edgeInsets.left, rect.size.height)];
                 ytext.anchorPoint = CGPointMake(0.5, 0);
                 ytext.alignmentMode = kCAAlignmentCenter;
@@ -293,21 +294,22 @@
         histogramLayer.fillColor = _histogramFillColor2.CGColor;
         [self.layer addSublayer:histogramLayer];
         [chartLayerAry addObject:histogramLayer];
-        histogramLayer.selfRect = CGRectMake(point.x, point.y, _histogramWidth, [curValue floatValue] * scale);
+        CGFloat curheight = [curValue floatValue] * scale;
+        histogramLayer.selfRect = CGRectMake(point.x, point.y, _histogramWidth, curheight);
         histogramLayer.obj = @0;
         
         [histogramLayer animationSetPath:^CGPathRef (CADisplayLink *displayLink) {
-            CGFloat targetValue = [curValue floatValue] * scale;
+            CGFloat targetValue = curheight;
             CGFloat currentValue = [histogramLayer.obj floatValue];
             CGFloat speed = (targetValue - currentValue) / 10;
             if (speed <= 1.0 / _precisionScale)
             {
                 [displayLink invalidate];
-//                CGRect rect = [self rectWithSize:CGSizeMake(_edgeInsets.left, self.rowSpace) attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:_yValueDataStyle.fontSize]} forStr:curValue];
-//                CATextLayer *ytext = [self textLayer:POINT(_histogramWidth / 2.0, [histogramLayer.obj floatValue]) text:curValue fontColor:_yValueDataStyle.fontColor fontSize:_yValueDataStyle.fontSize boxSize:CGSizeMake(_edgeInsets.left, rect.size.height)];
-//                ytext.anchorPoint = CGPointMake(0.5, 0);
-//                ytext.alignmentMode = kCAAlignmentCenter;
-//                [histogramLayer addSublayer:ytext];
+                CGRect rect = [self rectWithSize:CGSizeMake(_edgeInsets.left, self.rowSpace) attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:_yValueDataStyle.fontSize]} forStr:curValue];
+                CATextLayer *ytext = [self textLayer:POINT(_histogramWidth / 2.0, [histogramLayer.obj floatValue]) text:curValue fontColor:_yValueDataStyle.fontColor fontSize:_yValueDataStyle.fontSize boxSize:CGSizeMake(_edgeInsets.left, rect.size.height)];
+                ytext.anchorPoint = CGPointMake(0.5, 0);
+                ytext.alignmentMode = kCAAlignmentCenter;
+                [histogramLayer addSublayer:ytext];
             }
             
             UIBezierPath *path = [UIBezierPath bezierPath];

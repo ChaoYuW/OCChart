@@ -52,6 +52,7 @@
     [btn setTitle:@"刷新" forState:UIControlStateNormal];
     btn.frame = CGRectMake(150, 500, 100, 100);
     btn.backgroundColor = [UIColor orangeColor];
+    btn.showsTouchWhenHighlighted = YES;
     [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
     _btn = btn;
@@ -59,8 +60,8 @@
 
 - (void)btnClick
 {
-    [_btn setTitle:[NSString stringWithFormat:@"刷新 %ld",_hChartView.layer.sublayers.count] forState:0];
     [_hChartView reloadData];
+    [_btn setTitle:[NSString stringWithFormat:@"刷新 %ld",_hChartView.layer.sublayers.count] forState:0];
 }
 
 - (UIScrollView *)myScrollView
