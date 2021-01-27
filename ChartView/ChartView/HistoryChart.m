@@ -158,7 +158,7 @@
 //    // 画图
     [self drawHistogram];
     [self drawLineChart];
-    [self drawInitView];
+//    [self drawInitView];
 }
 - (void)drawInitView
 {
