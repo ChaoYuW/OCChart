@@ -206,6 +206,7 @@
         CAShapeLayer *dot = [self dotWith:POINT(CGRectGetMaxX(xsetext.frame)+5, 0) radius:_lineChartDotRadius color:_lineChartColor];
         dot.anchorPoint = POINT(0.5, 0.5);
         [animationLayer addSublayer:dot];
+        [displayLink invalidate];
         return path.CGPath;
     }];
     
@@ -364,6 +365,7 @@
             [animationLayer addSublayer:ytext];
 
         }
+        [displayLink invalidate];
         return path.CGPath;
     }];
     
