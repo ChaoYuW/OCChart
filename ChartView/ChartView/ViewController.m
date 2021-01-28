@@ -7,6 +7,7 @@
 
 #import "ViewController.h"
 #import "HistoryChart.h"
+#import "ECTestViewController.h"
 
 @interface ViewController ()
 {
@@ -54,6 +55,17 @@
     [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
     
+    UIButton *nextBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [nextBtn setTitle:@"知识点" forState:UIControlStateNormal];
+    nextBtn.frame = CGRectMake((screenW-100)*0.5, CGRectGetMaxY(btn.frame)+20, 100, 50);
+    nextBtn.backgroundColor = [UIColor orangeColor];
+    nextBtn.showsTouchWhenHighlighted = YES;
+    nextBtn.layer.cornerRadius = 25;
+    nextBtn.layer.masksToBounds = YES;
+    [nextBtn addTarget:self action:@selector(nextClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:nextBtn];
+    
+    
     _btn = btn;
 }
 
@@ -61,6 +73,12 @@
 {
     [_hChartView reloadData];
     [_btn setTitle:[NSString stringWithFormat:@"刷新 ：%ld",_hChartView.layer.sublayers.count] forState:0];
+}
+- (void)nextClick
+{
+    ECTestViewController *vc = [[ECTestViewController alloc] initWithNibName:@"ECTestViewController" bundle:nil];
+    vc.modalPresentationStyle = UIModalPresentationFullScreen;
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 - (UIScrollView *)myScrollView
