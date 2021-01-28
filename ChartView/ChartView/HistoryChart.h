@@ -62,6 +62,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,assign)CGFloat lineChartDotRadius;        // 折线圆点
 @property (nonatomic,strong)UIColor *lineChartDotColor;        // 折线圆点颜色
 @property (nonatomic,copy)void(^histogramClickAction)(NSInteger index); // 点击柱状图回调事件
+/* 曲线 */
+
+@property (nonatomic,assign)BOOL isCurve;
 
 // 绘制图表
 - (void)reloadData;

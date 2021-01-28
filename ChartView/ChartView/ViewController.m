@@ -24,15 +24,11 @@
     // Do any additional setup after loading the view.
     
      //毛利额 = 销售额*毛利率 maolieArray = gmvArray * maolilvArray;
-    
-    
-    
-
     [self.view addSubview:self.myScrollView];
     
     NSArray *salesAry = @[@"10000",@"3000",@"76300",@"5000",@"6000",@"6000",@"9800"];
     CGFloat w = salesAry.count *70 + 40 +40;
-    HistoryChart *hChartView = [[HistoryChart alloc] initWithFrame:CGRectMake(0, 0, w, CGRectGetWidth(self.view.frame))];
+    HistoryChart *hChartView = [[HistoryChart alloc] initWithFrame:CGRectMake(0, 0, w, 400)];
 //    hChartView.backgroundColor = UIColor.lightGrayColor;
     [self.myScrollView addSubview:hChartView];
     
@@ -47,21 +43,24 @@
     
     [hChartView reloadData];
     
-    
+    CGFloat screenW = [UIScreen mainScreen].bounds.size.width;
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     [btn setTitle:@"刷新" forState:UIControlStateNormal];
-    btn.frame = CGRectMake(150, 500, 100, 100);
+    btn.frame = CGRectMake((screenW-100)*0.5, CGRectGetMaxY(self.myScrollView.frame)+20, 100, 50);
     btn.backgroundColor = [UIColor orangeColor];
     btn.showsTouchWhenHighlighted = YES;
+    btn.layer.cornerRadius = 25;
+    btn.layer.masksToBounds = YES;
     [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
+    
     _btn = btn;
 }
 
 - (void)btnClick
 {
     [_hChartView reloadData];
-    [_btn setTitle:[NSString stringWithFormat:@"刷新 %ld",_hChartView.layer.sublayers.count] forState:0];
+    [_btn setTitle:[NSString stringWithFormat:@"刷新 ：%ld",_hChartView.layer.sublayers.count] forState:0];
 }
 
 - (UIScrollView *)myScrollView

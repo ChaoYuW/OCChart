@@ -156,7 +156,7 @@
 //    // 绘制坐标轴数据
     [self drawAxisData];
 //    // 画图
-    [self drawHistogram];
+//    [self drawHistogram];
     [self drawLineChart];
 //    [self drawInitView];
 }
@@ -329,6 +329,9 @@
 }
 - (void)drawLineChart{
     
+    if (_valueDataAry1.count == 0) {
+        return;
+    }
     CGFloat scale = self.rowSpace / space_value;
     NSMutableArray *tempAry = [NSMutableArray array];
     for (int i = 0; i < [_valueDataAry1 count]; i++) {
@@ -341,33 +344,54 @@
     animationLayer.fillColor = [UIColor clearColor].CGColor;
     animationLayer.zPosition = 999999;
     [self.layer addSublayer:animationLayer];
-    
-    [animationLayer animationSetPath:^CGPathRef(CADisplayLink *displayLink) {
-        UIBezierPath *path = [UIBezierPath bezierPath];
-        
-        CGFloat posX = padding+_histogramWidth+padding*0.5;
-        if (_valueDataAry1.count > 0) {
-            [path moveToPoint:POINT(posX, [_valueDataAry1[0] floatValue] * scale)];
+    _isCurve = YES;
+    UIBezierPath *path = [UIBezierPath bezierPath];
+    CGFloat posX = padding+_histogramWidth+padding*0.5;
+    if (_isCurve) {
+        [path moveToPoint:POINT(posX, [_valueDataAry1[0] floatValue] * scale)];
+        for (int i = 1; i < [_valueDataAry1 count]; i++) {
+            if (i + 1 < [_valueDataAry1 count]) {
+                NSString *curValue = _valueDataAry1[i];
+                NSString *nextValue = _valueDataAry1[i+1];
+                CGPoint p1 = CGPointMake(posX + self.columnSpace * i, [curValue floatValue] * scale);
+                CGPoint p2 = CGPointMake(posX + self.columnSpace * i, [nextValue floatValue] * scale);
+                [path addCurveToPoint:CGPointMake(posX-padding*0.5 + self.columnSpace * (i+1), [nextValue floatValue] * scale) controlPoint1:p1 controlPoint2:p2];
+            }
         }
+    }else
+    {
+        [path moveToPoint:POINT(posX, [_valueDataAry1[0] floatValue] * scale)];
         for (int i = 1; i < [_valueDataAry1 count]; i++)
         {
             NSString *curValue = _valueDataAry1[i];
             [path addLineToPoint:POINT(posX + self.columnSpace * i, [curValue floatValue] * scale)];
-            
-            CAShapeLayer *dot = [self dotWith:POINT(posX + self.columnSpace * i, [curValue floatValue] * scale) radius:_lineChartDotRadius color:_lineChartColor];
-            dot.anchorPoint = POINT(0.5, 0.5);
-            [animationLayer addSublayer:dot];
-            
-            
-            CGRect rect = [self rectWithSize:CGSizeMake(_edgeInsets.left, self.rowSpace) attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:_yValueDataStyle.fontSize]} forStr:curValue];
-            
-            CATextLayer *ytext = [self textLayer:POINT(posX + self.columnSpace * i, [curValue floatValue] * scale + 10) text:curValue fontColor:_yValueDataStyle.fontColor fontSize:_yValueDataStyle.fontSize boxSize:CGSizeMake(_edgeInsets.left, rect.size.height)];
-            ytext.anchorPoint = CGPointMake(0.5, 0);
-            ytext.alignmentMode = kCAAlignmentCenter;
-            [animationLayer addSublayer:ytext];
-
         }
-        [displayLink invalidate];
+    }
+    
+    
+    [animationLayer animationSetPath:^CGPathRef(CADisplayLink *displayLink) {
+        
+        animationLayer.strokeEnd += 0.01;
+        if (animationLayer.strokeEnd > 1) {
+            [displayLink invalidate];
+            for (int i = 0; i < [_valueDataAry1 count]; i++)
+            {
+                NSString *curValue = _valueDataAry1[i];
+                
+                CAShapeLayer *dot = [self dotWith:POINT(posX + self.columnSpace * i, [curValue floatValue] * scale) radius:_lineChartDotRadius color:_lineChartColor];
+                dot.anchorPoint = POINT(0.5, 0.5);
+                [animationLayer addSublayer:dot];
+                
+                
+                CGRect rect = [self rectWithSize:CGSizeMake(_edgeInsets.left, self.rowSpace) attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:_yValueDataStyle.fontSize]} forStr:curValue];
+                
+                CATextLayer *ytext = [self textLayer:POINT(posX + self.columnSpace * i, [curValue floatValue] * scale + 10) text:curValue fontColor:_yValueDataStyle.fontColor fontSize:_yValueDataStyle.fontSize boxSize:CGSizeMake(_edgeInsets.left, rect.size.height)];
+                ytext.anchorPoint = CGPointMake(0.5, 0);
+                ytext.alignmentMode = kCAAlignmentCenter;
+                [animationLayer addSublayer:ytext];
+
+            }
+        }
         return path.CGPath;
     }];
     
@@ -505,10 +529,14 @@
 // 绘制圆点
 - (CAShapeLayer *)dotWith:(CGPoint)point radius:(CGFloat)radius color:(UIColor *)color{
     CAShapeLayer *layer = [CAShapeLayer layer];
-    layer.bounds = CGRectMake(0, 0, 4 * radius, 4 * radius);
-    layer.position = point;
-    layer.cornerRadius = radius;
-    layer.backgroundColor = color.CGColor;
+    layer.strokeColor = color.CGColor;
+    layer.fillColor = UIColor.whiteColor.CGColor;
+    layer.lineWidth = 2;
+    
+    UIBezierPath *path = [UIBezierPath bezierPath];
+    [path addArcWithCenter:point radius:radius startAngle:0 endAngle:M_PI*2 clockwise:YES];
+    layer.path = path.CGPath;
+    
     return layer;
 }
 - (void)calculateValue{
