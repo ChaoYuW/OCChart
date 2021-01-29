@@ -40,7 +40,7 @@
     self.displayView.frame = CGRectMake(20, 150, selfWidth-2*20, 300);
     [self.view addSubview:self.displayView];
     
-    _centerPosition = CGPointMake(self.displayView.center.x, self.displayView.center.y-CGRectGetMinY(self.displayView.frame));
+    _centerPosition = CGPointMake(self.displayView.center.x,self.displayView.center.y-CGRectGetMinY(self.displayView.frame));
 
     [self addBezierPath2];
     

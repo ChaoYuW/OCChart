@@ -349,15 +349,29 @@
     CGFloat posX = padding+_histogramWidth+padding*0.5;
     if (_isCurve) {
         [path moveToPoint:POINT(posX, [_valueDataAry1[0] floatValue] * scale)];
-        for (int i = 1; i < [_valueDataAry1 count]; i++) {
+        for (int i = 0; i < [_valueDataAry1 count]; i++) {
             if (i + 1 < [_valueDataAry1 count]) {
                 NSString *curValue = _valueDataAry1[i];
                 NSString *nextValue = _valueDataAry1[i+1];
-                CGPoint p1 = CGPointMake(posX + self.columnSpace * i, [curValue floatValue] * scale);
-                CGPoint p2 = CGPointMake(posX + self.columnSpace * i, [nextValue floatValue] * scale);
-                [path addCurveToPoint:CGPointMake(posX-padding*0.5 + self.columnSpace * (i+1), [nextValue floatValue] * scale) controlPoint1:p1 controlPoint2:p2];
+                CGPoint p1 = CGPointMake(posX + self.columnSpace * i + self.columnSpace*0.5, [curValue floatValue] * scale);
+                CGPoint p2 = CGPointMake(posX + self.columnSpace * i + self.columnSpace*0.5, [nextValue floatValue] * scale);
+                
+//                CALayer *layer1 = CALayer.layer;
+//                layer1.frame = CGRectMake(p1.x, p1.y, 5, 5);
+//                layer1.backgroundColor = UIColor.redColor.CGColor;
+//                [self.layer addSublayer:layer1];
+//
+//                CALayer *layer2 = CALayer.layer;
+//                layer2.frame = CGRectMake(p2.x, p2.y, 5, 5);
+//                layer2.backgroundColor = UIColor.blueColor.CGColor;
+//                [self.layer addSublayer:layer2];
+                
+                [path addCurveToPoint:CGPointMake(posX + self.columnSpace * (i+1), [nextValue floatValue] * scale) controlPoint1:p1 controlPoint2:p2];
             }
         }
+//        [path addLineToPoint:POINT(TwoPointSpacing(CanvasRightBottomPoint, CanvasLeftBottomPoint), 0)];
+//        [path addLineToPoint:POINT(posX, 0)];
+//        [path addLineToPoint:POINT(posX, [_valueDataAry1[0] floatValue] * scale)];
     }else
     {
         [path moveToPoint:POINT(posX, [_valueDataAry1[0] floatValue] * scale)];
