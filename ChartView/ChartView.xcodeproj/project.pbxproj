@@ -3,13 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		023AB6081E344599CB2D71D2 /* Pods_ChartView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9923203C9D72E5DACDCA39DC /* Pods_ChartView.framework */; };
 		89DB4A0AB5E562C06559FBCD /* Pods_ChartViewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46358E843ECE5BED9A5B54DA /* Pods_ChartViewTests.framework */; };
 		8DA57154D3C5D805CBF38A58 /* Pods_ChartView_ChartViewUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FE2C268D4DFCD0ED04B7C0D /* Pods_ChartView_ChartViewUITests.framework */; };
+		E56BA00625C1605900A4645C /* chartVIew.mov in Resources */ = {isa = PBXBuildFile; fileRef = E56BA00525C1605800A4645C /* chartVIew.mov */; };
+		E56BA00D25C28E9500A4645C /* ECTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E56BA00C25C28E9500A4645C /* ECTestViewController.m */; };
+		E56BA01225C292EB00A4645C /* ECTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E56BA01125C292EB00A4645C /* ECTestViewController.xib */; };
 		E56C4E4B252EA8C4004D80C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E56C4E4A252EA8C4004D80C0 /* AppDelegate.m */; };
 		E56C4E4E252EA8C4004D80C0 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E56C4E4D252EA8C4004D80C0 /* SceneDelegate.m */; };
 		E56C4E51252EA8C4004D80C0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E56C4E50252EA8C4004D80C0 /* ViewController.m */; };
@@ -49,6 +52,10 @@
 		A63DBAA8034E5A087DB1DC69 /* Pods-ChartViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartViewTests.release.xcconfig"; path = "Target Support Files/Pods-ChartViewTests/Pods-ChartViewTests.release.xcconfig"; sourceTree = "<group>"; };
 		C12BC0753FC47917BE309219 /* Pods-ChartView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartView.release.xcconfig"; path = "Target Support Files/Pods-ChartView/Pods-ChartView.release.xcconfig"; sourceTree = "<group>"; };
 		CBFE958E0AAF9396B91998F6 /* Pods-ChartView-ChartViewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartView-ChartViewUITests.release.xcconfig"; path = "Target Support Files/Pods-ChartView-ChartViewUITests/Pods-ChartView-ChartViewUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E56BA00525C1605800A4645C /* chartVIew.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = chartVIew.mov; sourceTree = "<group>"; };
+		E56BA00B25C28E9500A4645C /* ECTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECTestViewController.h; sourceTree = "<group>"; };
+		E56BA00C25C28E9500A4645C /* ECTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECTestViewController.m; sourceTree = "<group>"; };
+		E56BA01125C292EB00A4645C /* ECTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ECTestViewController.xib; sourceTree = "<group>"; };
 		E56C4E46252EA8C4004D80C0 /* ChartView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E56C4E49252EA8C4004D80C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E56C4E4A252EA8C4004D80C0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -156,6 +163,9 @@
 				E56C4E4D252EA8C4004D80C0 /* SceneDelegate.m */,
 				E56C4E4F252EA8C4004D80C0 /* ViewController.h */,
 				E56C4E50252EA8C4004D80C0 /* ViewController.m */,
+				E56BA00B25C28E9500A4645C /* ECTestViewController.h */,
+				E56BA00C25C28E9500A4645C /* ECTestViewController.m */,
+				E56BA01125C292EB00A4645C /* ECTestViewController.xib */,
 				E56C4E84252EA930004D80C0 /* HistoryChart.h */,
 				E56C4E85252EA930004D80C0 /* HistoryChart.m */,
 				E56C4E8A252EA9F2004D80C0 /* LIneToolObj.h */,
@@ -165,6 +175,7 @@
 				E56C4E57252EA8C6004D80C0 /* LaunchScreen.storyboard */,
 				E56C4E5A252EA8C6004D80C0 /* Info.plist */,
 				E56C4E5B252EA8C6004D80C0 /* main.m */,
+				E56BA00525C1605800A4645C /* chartVIew.mov */,
 			);
 			path = ChartView;
 			sourceTree = "<group>";
@@ -296,6 +307,8 @@
 			files = (
 				E56C4E59252EA8C6004D80C0 /* LaunchScreen.storyboard in Resources */,
 				E56C4E56252EA8C6004D80C0 /* Assets.xcassets in Resources */,
+				E56BA01225C292EB00A4645C /* ECTestViewController.xib in Resources */,
+				E56BA00625C1605900A4645C /* chartVIew.mov in Resources */,
 				E56C4E54252EA8C4004D80C0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +441,7 @@
 				E56C4E86252EA930004D80C0 /* HistoryChart.m in Sources */,
 				E56C4E4B252EA8C4004D80C0 /* AppDelegate.m in Sources */,
 				E56C4E8C252EA9F2004D80C0 /* LIneToolObj.m in Sources */,
+				E56BA00D25C28E9500A4645C /* ECTestViewController.m in Sources */,
 				E56C4E5C252EA8C6004D80C0 /* main.m in Sources */,
 				E56C4E4E252EA8C4004D80C0 /* SceneDelegate.m in Sources */,
 			);
