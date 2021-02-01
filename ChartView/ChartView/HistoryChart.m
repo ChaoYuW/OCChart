@@ -340,14 +340,13 @@
     
     ECAnimationLayer *animationLayer = [self lineChartWith:CanvasLeftBottomPoint width:TwoPointSpacing(CanvasRightBottomPoint, CanvasLeftBottomPoint) height:TwoPointSpacing(CanvasLeftTopPoint, CanvasLeftBottomPoint)];
     animationLayer.anchorPoint = CGPointMake(0, 0);
-    animationLayer.strokeColor = _lineChartColor.CGColor;
-    animationLayer.fillColor = [UIColor clearColor].CGColor;
+    
     animationLayer.zPosition = 999999;
     [self.layer addSublayer:animationLayer];
-    _isCurve = YES;
     UIBezierPath *path = [UIBezierPath bezierPath];
     CGFloat posX = padding+_histogramWidth+padding*0.5;
     if (_isCurve) {
+        animationLayer.fillColor = _lineChartColor.CGColor;
         [path moveToPoint:POINT(posX, [_valueDataAry1[0] floatValue] * scale)];
         for (int i = 0; i < [_valueDataAry1 count]; i++) {
             if (i + 1 < [_valueDataAry1 count]) {
@@ -369,11 +368,17 @@
                 [path addCurveToPoint:CGPointMake(posX + self.columnSpace * (i+1), [nextValue floatValue] * scale) controlPoint1:p1 controlPoint2:p2];
             }
         }
-//        [path addLineToPoint:POINT(TwoPointSpacing(CanvasRightBottomPoint, CanvasLeftBottomPoint), 0)];
-//        [path addLineToPoint:POINT(posX, 0)];
-//        [path addLineToPoint:POINT(posX, [_valueDataAry1[0] floatValue] * scale)];
+        NSInteger lastNum = _valueDataAry1.count -1;
+        CGFloat lastX = posX + self.columnSpace * lastNum;
+        
+        
+        [path addLineToPoint:POINT(lastX, 0)];
+        [path addLineToPoint:POINT(posX, 0)];
+        [path addLineToPoint:POINT(posX, [_valueDataAry1[0] floatValue] * scale)];
     }else
     {
+        animationLayer.strokeColor = _lineChartColor.CGColor;
+        animationLayer.fillColor = [UIColor clearColor].CGColor;
         [path moveToPoint:POINT(posX, [_valueDataAry1[0] floatValue] * scale)];
         for (int i = 1; i < [_valueDataAry1 count]; i++)
         {
