@@ -6,13 +6,13 @@
 //
 
 #import "ECTestViewController.h"
+#import "NavBarView.h"
 
 @interface ECTestViewController ()
 {
     CGPoint _centerPosition;
 }
 @property (strong, nonatomic) UIView *displayView;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *navHeight;
 
 
 @end
@@ -24,16 +24,13 @@
     // Do any additional setup after loading the view.
     
     self.view.backgroundColor = UIColor.whiteColor;
-    if (@available(iOS 11.0, *)) {
-            UIWindow *mainWindow = [[UIApplication sharedApplication].windows firstObject];
-            if (mainWindow.safeAreaInsets.bottom > 0.0) {
-                self.navHeight.constant = 88;
-            }
-        }else
-        {
-            self.navHeight.constant = 64;
-        }
 
+    NavBarView *navBarView = [NavBarView navBarView];
+    navBarView.navtitle = @"哆啦A梦";
+    navBarView.CloseBlock = ^{
+        [self dismissViewControllerAnimated:YES completion:nil];
+    };
+    [self.view addSubview:navBarView];
     
     CGFloat selfWidth = [UIScreen mainScreen].bounds.size.width;
 

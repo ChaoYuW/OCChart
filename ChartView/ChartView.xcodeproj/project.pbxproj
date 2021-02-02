@@ -12,10 +12,13 @@
 		8DA57154D3C5D805CBF38A58 /* Pods_ChartView_ChartViewUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FE2C268D4DFCD0ED04B7C0D /* Pods_ChartView_ChartViewUITests.framework */; };
 		E56BA00625C1605900A4645C /* chartVIew.mov in Resources */ = {isa = PBXBuildFile; fileRef = E56BA00525C1605800A4645C /* chartVIew.mov */; };
 		E56BA00D25C28E9500A4645C /* ECTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E56BA00C25C28E9500A4645C /* ECTestViewController.m */; };
-		E56BA01225C292EB00A4645C /* ECTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E56BA01125C292EB00A4645C /* ECTestViewController.xib */; };
+		E56BA03325C8EB0F00A4645C /* priceTrend.json in Resources */ = {isa = PBXBuildFile; fileRef = E56BA03225C8EB0F00A4645C /* priceTrend.json */; };
+		E56BA03C25C8FE0500A4645C /* HistogramViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E56BA03B25C8FE0500A4645C /* HistogramViewController.m */; };
+		E56BA04225C906F200A4645C /* NavBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = E56BA04125C906F200A4645C /* NavBarView.m */; };
+		E56BA04725C9070000A4645C /* NavBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E56BA04625C9070000A4645C /* NavBarView.xib */; };
+		E56BA04F25C91BF100A4645C /* TrendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E56BA04E25C91BF100A4645C /* TrendViewController.m */; };
 		E56C4E4B252EA8C4004D80C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E56C4E4A252EA8C4004D80C0 /* AppDelegate.m */; };
-		E56C4E4E252EA8C4004D80C0 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E56C4E4D252EA8C4004D80C0 /* SceneDelegate.m */; };
-		E56C4E51252EA8C4004D80C0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E56C4E50252EA8C4004D80C0 /* ViewController.m */; };
+		E56C4E51252EA8C4004D80C0 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E56C4E50252EA8C4004D80C0 /* MainViewController.m */; };
 		E56C4E54252EA8C4004D80C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E56C4E52252EA8C4004D80C0 /* Main.storyboard */; };
 		E56C4E56252EA8C6004D80C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E56C4E55252EA8C6004D80C0 /* Assets.xcassets */; };
 		E56C4E59252EA8C6004D80C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E56C4E57252EA8C6004D80C0 /* LaunchScreen.storyboard */; };
@@ -55,14 +58,19 @@
 		E56BA00525C1605800A4645C /* chartVIew.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = chartVIew.mov; sourceTree = "<group>"; };
 		E56BA00B25C28E9500A4645C /* ECTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECTestViewController.h; sourceTree = "<group>"; };
 		E56BA00C25C28E9500A4645C /* ECTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECTestViewController.m; sourceTree = "<group>"; };
-		E56BA01125C292EB00A4645C /* ECTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ECTestViewController.xib; sourceTree = "<group>"; };
+		E56BA03225C8EB0F00A4645C /* priceTrend.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = priceTrend.json; sourceTree = "<group>"; };
+		E56BA03A25C8FE0500A4645C /* HistogramViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistogramViewController.h; sourceTree = "<group>"; };
+		E56BA03B25C8FE0500A4645C /* HistogramViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistogramViewController.m; sourceTree = "<group>"; };
+		E56BA04025C906F200A4645C /* NavBarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavBarView.h; sourceTree = "<group>"; };
+		E56BA04125C906F200A4645C /* NavBarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavBarView.m; sourceTree = "<group>"; };
+		E56BA04625C9070000A4645C /* NavBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavBarView.xib; sourceTree = "<group>"; };
+		E56BA04D25C91BF100A4645C /* TrendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrendViewController.h; sourceTree = "<group>"; };
+		E56BA04E25C91BF100A4645C /* TrendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrendViewController.m; sourceTree = "<group>"; };
 		E56C4E46252EA8C4004D80C0 /* ChartView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E56C4E49252EA8C4004D80C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E56C4E4A252EA8C4004D80C0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E56C4E4C252EA8C4004D80C0 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		E56C4E4D252EA8C4004D80C0 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		E56C4E4F252EA8C4004D80C0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E56C4E50252EA8C4004D80C0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E56C4E4F252EA8C4004D80C0 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		E56C4E50252EA8C4004D80C0 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		E56C4E53252EA8C4004D80C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E56C4E55252EA8C6004D80C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E56C4E58252EA8C6004D80C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -132,6 +140,48 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E56BA03025C8EA8E00A4645C /* trend */ = {
+			isa = PBXGroup;
+			children = (
+				E56BA04D25C91BF100A4645C /* TrendViewController.h */,
+				E56BA04E25C91BF100A4645C /* TrendViewController.m */,
+			);
+			path = trend;
+			sourceTree = "<group>";
+		};
+		E56BA03125C8EAFB00A4645C /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				E56BA03225C8EB0F00A4645C /* priceTrend.json */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		E56BA04B25C9176B00A4645C /* 统计图+柱状图 */ = {
+			isa = PBXGroup;
+			children = (
+				E56BA03A25C8FE0500A4645C /* HistogramViewController.h */,
+				E56BA03B25C8FE0500A4645C /* HistogramViewController.m */,
+				E56BA00B25C28E9500A4645C /* ECTestViewController.h */,
+				E56BA00C25C28E9500A4645C /* ECTestViewController.m */,
+				E56C4E84252EA930004D80C0 /* HistoryChart.h */,
+				E56C4E85252EA930004D80C0 /* HistoryChart.m */,
+				E56C4E8A252EA9F2004D80C0 /* LIneToolObj.h */,
+				E56C4E8B252EA9F2004D80C0 /* LIneToolObj.m */,
+			);
+			path = "统计图+柱状图";
+			sourceTree = "<group>";
+		};
+		E56BA04C25C9178E00A4645C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E56BA04025C906F200A4645C /* NavBarView.h */,
+				E56BA04125C906F200A4645C /* NavBarView.m */,
+				E56BA04625C9070000A4645C /* NavBarView.xib */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		E56C4E3D252EA8C4004D80C0 = {
 			isa = PBXGroup;
 			children = (
@@ -159,22 +209,17 @@
 			children = (
 				E56C4E49252EA8C4004D80C0 /* AppDelegate.h */,
 				E56C4E4A252EA8C4004D80C0 /* AppDelegate.m */,
-				E56C4E4C252EA8C4004D80C0 /* SceneDelegate.h */,
-				E56C4E4D252EA8C4004D80C0 /* SceneDelegate.m */,
-				E56C4E4F252EA8C4004D80C0 /* ViewController.h */,
-				E56C4E50252EA8C4004D80C0 /* ViewController.m */,
-				E56BA00B25C28E9500A4645C /* ECTestViewController.h */,
-				E56BA00C25C28E9500A4645C /* ECTestViewController.m */,
-				E56BA01125C292EB00A4645C /* ECTestViewController.xib */,
-				E56C4E84252EA930004D80C0 /* HistoryChart.h */,
-				E56C4E85252EA930004D80C0 /* HistoryChart.m */,
-				E56C4E8A252EA9F2004D80C0 /* LIneToolObj.h */,
-				E56C4E8B252EA9F2004D80C0 /* LIneToolObj.m */,
+				E56C4E4F252EA8C4004D80C0 /* MainViewController.h */,
+				E56C4E50252EA8C4004D80C0 /* MainViewController.m */,
+				E56BA04C25C9178E00A4645C /* Common */,
+				E56BA04B25C9176B00A4645C /* 统计图+柱状图 */,
+				E56BA03025C8EA8E00A4645C /* trend */,
 				E56C4E52252EA8C4004D80C0 /* Main.storyboard */,
 				E56C4E55252EA8C6004D80C0 /* Assets.xcassets */,
 				E56C4E57252EA8C6004D80C0 /* LaunchScreen.storyboard */,
 				E56C4E5A252EA8C6004D80C0 /* Info.plist */,
 				E56C4E5B252EA8C6004D80C0 /* main.m */,
+				E56BA03125C8EAFB00A4645C /* Resource */,
 				E56BA00525C1605800A4645C /* chartVIew.mov */,
 			);
 			path = ChartView;
@@ -305,11 +350,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E56BA04725C9070000A4645C /* NavBarView.xib in Resources */,
 				E56C4E59252EA8C6004D80C0 /* LaunchScreen.storyboard in Resources */,
 				E56C4E56252EA8C6004D80C0 /* Assets.xcassets in Resources */,
-				E56BA01225C292EB00A4645C /* ECTestViewController.xib in Resources */,
 				E56BA00625C1605900A4645C /* chartVIew.mov in Resources */,
 				E56C4E54252EA8C4004D80C0 /* Main.storyboard in Resources */,
+				E56BA03325C8EB0F00A4645C /* priceTrend.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,13 +483,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E56C4E51252EA8C4004D80C0 /* ViewController.m in Sources */,
+				E56BA04F25C91BF100A4645C /* TrendViewController.m in Sources */,
+				E56C4E51252EA8C4004D80C0 /* MainViewController.m in Sources */,
+				E56BA03C25C8FE0500A4645C /* HistogramViewController.m in Sources */,
+				E56BA04225C906F200A4645C /* NavBarView.m in Sources */,
 				E56C4E86252EA930004D80C0 /* HistoryChart.m in Sources */,
 				E56C4E4B252EA8C4004D80C0 /* AppDelegate.m in Sources */,
 				E56C4E8C252EA9F2004D80C0 /* LIneToolObj.m in Sources */,
 				E56BA00D25C28E9500A4645C /* ECTestViewController.m in Sources */,
 				E56C4E5C252EA8C6004D80C0 /* main.m in Sources */,
-				E56C4E4E252EA8C4004D80C0 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
