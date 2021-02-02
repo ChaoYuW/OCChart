@@ -33,8 +33,8 @@
 {
     CGSize _size;
     CGFloat space_value;
-    NSMutableArray *chartLayerAry;
 }
+@property (nonatomic, strong) NSMutableArray *chartLayerAry;
 @property (nonatomic,assign)CGFloat rowSpace;               // 竖直方向每一行间距
 @property (nonatomic,assign)CGFloat columnSpace;            // 水平方向每一列间距
 @end
@@ -146,7 +146,7 @@
     // 绘制前清空画布
 
     [self.layer.sublayers makeObjectsPerformSelector:@selector(removeFromSuperlayer)];
-    
+    [self.chartLayerAry removeAllObjects];
     // 绘制XY轴
     [self drawXYAxis];
     // 绘制辅助线
@@ -156,9 +156,26 @@
 //    // 绘制坐标轴数据
     [self drawAxisData];
 //    // 画图
-//    [self drawHistogram];
+    [self drawHistogram];
     [self drawLineChart];
-//    [self drawInitView];
+    [self drawInitView];
+}
+// 点击事件
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    CGPoint point = [[touches anyObject] locationInView:self];
+    [CATransaction begin];
+    [CATransaction setDisableActions:YES];
+    for (ECAnimationLayer *layer in self.chartLayerAry) {
+        if (CGRectContainsPoint(layer.selfRect, point)) {
+            layer.fillColor = _histogramClickFillColor.CGColor;
+            if (_histogramClickAction) {
+                _histogramClickAction([self.chartLayerAry indexOfObject:layer]);
+            }
+        }else{
+            layer.fillColor = _histogramFillColor2.CGColor;
+        }
+    }
+    [CATransaction commit];
 }
 - (void)drawInitView
 {
@@ -248,7 +265,7 @@
         histogramLayer.zPosition = 999999;
         histogramLayer.fillColor = _histogramFillColor1.CGColor;
         [self.layer addSublayer:histogramLayer];
-        [chartLayerAry addObject:histogramLayer];
+//        [self.chartLayerAry addObject:histogramLayer];
         CGFloat curheight = [curValue floatValue] * scale;
         histogramLayer.selfRect = CGRectMake(point.x, point.y, _histogramWidth, curheight);
         histogramLayer.obj = @0;
@@ -293,7 +310,7 @@
         histogramLayer.zPosition = 999999;
         histogramLayer.fillColor = _histogramFillColor2.CGColor;
         [self.layer addSublayer:histogramLayer];
-        [chartLayerAry addObject:histogramLayer];
+        [self.chartLayerAry addObject:histogramLayer];
         CGFloat curheight = [curValue floatValue] * scale;
         histogramLayer.selfRect = CGRectMake(point.x, point.y, _histogramWidth, curheight);
         histogramLayer.obj = @0;
@@ -653,5 +670,11 @@
     return [[[string componentsSeparatedByString:@"."] firstObject] floatValue];
 }
 
-
+- (NSMutableArray *)chartLayerAry
+{
+    if (_chartLayerAry == nil) {
+        _chartLayerAry = NSMutableArray.array;
+    }
+    return _chartLayerAry;
+}
 @end

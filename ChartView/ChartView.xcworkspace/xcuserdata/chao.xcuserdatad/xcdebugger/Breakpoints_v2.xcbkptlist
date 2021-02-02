@@ -3,4 +3,54 @@
    uuid = "77B80449-31E5-462E-8606-1043714973A9"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0AB03FD6-9DA5-416D-B201-C1A1EB28732A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChartView/HistoryChart.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "168"
+            endingLineNumber = "168"
+            landmarkName = "-touchesBegan:withEvent:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0AB03FD6-9DA5-416D-B201-C1A1EB28732A - c798bf409dd8f029"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[HistoryChart touchesBegan:withEvent:]"
+                  moduleName = "ChartView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chao/Documents/GitHub/OCChart/ChartView/ChartView/HistoryChart.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "168"
+                  endingLineNumber = "168"
+                  offsetFromSymbolStart = "263">
+               </Location>
+               <Location
+                  uuid = "0AB03FD6-9DA5-416D-B201-C1A1EB28732A - c798bf409dd8f029"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[HistoryChart touchesBegan:withEvent:]"
+                  moduleName = "ChartView"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chao/Documents/GitHub/OCChart/ChartView/ChartView/HistoryChart.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "168"
+                  endingLineNumber = "168"
+                  offsetFromSymbolStart = "283">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
