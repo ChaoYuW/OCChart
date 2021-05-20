@@ -1,6 +1,11 @@
 # [绘制柱状图 统计表](https://github.com/ChaoYuW/OCChart/blob/main/ChartView/ChartView/chartVIew.mov)
 ## 该模块来自一个外包项目一部分封装 可移植性强 
 ### 采用 CAShapeLayer + CADisplayLink 实现  动画流畅 内存稳定  
+## 优势
+### 渲染快,采用硬件加速,比用Core Graphics快很多;
+### 高效使用内存,由于不需要像普通layer那样创建寄宿图,所以无论改layer多大,都不要占用太多内存;
+### 超出图层依然可以绘图,不会被图层边界裁剪掉;
+### 不会出现像素化, CAShapeLayer在做3D变换时,不会像普通有寄宿图的CALayer那样变得像素画.
 
 ```objective-c
 
